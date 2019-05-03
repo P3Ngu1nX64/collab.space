@@ -1,11 +1,11 @@
-#Learn Python 3 the Hard Way
-__###Python Learning - collab.space####__
+# Learn Python 3 the Hard Way
+### __Python Learning - collab.space__
 
 The primary instruction resource is based on a PDF extraction of a book and online HTML webpage tutorial by the author __Zed Shaw__.
 collab.space in no way takes credit for the uploaded PDF. It is courtesy of [learnpythonthehardway.org](https://learnpythonthehardway.org/python3/), and it is incorporated into this GitHub directory solely for the purpose of reference.
 
 
-##Exercises
+## Exercises
 The following section will be concerned with the exercises of the tutorial: Learn Python 3 the Hard Way. It includes annotations of the self-explanatory tutorial rather than explanations.
 Disclaimer: The set up process is very sophisticated, along with its Command Line Crash Course (in the appendix, page 288), could be put into a separate tutorial. Therefore, it will not be incorporated into this tutorial. Therefore, our first exercise will be on Page 34 of the PDF.
 Here is a short Table of Contents. _(Subject to change)_
@@ -30,7 +30,7 @@ Exercise No# | Exercise Name | Page Number
 16 | Reading and Writing Files | 84
 17 | More Files | 88
 
-###Exercise 1
+### Exercise 1
 ..A Good First Program.
 ..When asked to comment out a given line with a pound sign, line 6 is used as an example:
 >6    print("I'd much rather you 'not'.")
