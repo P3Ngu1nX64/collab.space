@@ -40,4 +40,19 @@ The complete line to be commented out is reiterated in line 9:
 
 >``# print("I'd much rather you 'not'.")``
 
+### Exercise 2
+Comments and Pound Characters.
+Comments could be put after code in the same line, it is recommended that two spaces are left between the code and the pound characer, as in Line 4:
+
+>``print('I could have code like this.')  # and the comment after is ignored``
+
+### Exercise 3
+Numbers and Math.
+This exercise has three files: ``ex03.0.py`` is the original version, ``ex03.1.py`` has all the numbers converted to floats, and ``ex03.2.py`` has annotations for complex mathematical operations, detailing its calculations.
+
+On lines 1-9 of all files is a list of the mathematical symbols used.
+In the file ``ex03.2.py``, each complex calculation is detailed using the order of operations, which some know as PEDMAS or GEMDAS. It is important to know that the Modulo ``%`` operator is treated in the same order as multiplication ``*`` or division ``/``. For example, in line 14/15:
+
+>``print("Roosters", 100 - 25 * 3 % 4)``
+
 _Additional Information of the Files will be posted here as they are amended to the Directory._
