@@ -31,11 +31,11 @@ Exercise No# | Exercise Name | Page Number
 17 | More Files | 88
 
 ### Exercise 1
-..A Good First Program.
-..When asked to comment out a given line with a pound sign, line 6 is used as an example:
->6    print("I'd much rather you 'not'.")
+.. A Good First Program.
+.. When asked to comment out a given line with a pound sign, line 6 is used as an example:
+>6|    print("I'd much rather you 'not'.")
 
-..The complete line to be commented out is reiterated in line 9:
->9    # print("I'd much rather you 'not'.")
+.. The complete line to be commented out is reiterated in line 9:
+>9|    # print("I'd much rather you 'not'.")
 
 _Additional Information of the Files will be posted here as they are amended to the Directory._

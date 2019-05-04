@@ -8,5 +8,7 @@ _This is a open source repository, feel free to test your code ideas._
      "C++ is the best coding language."
                                       -Eric Chen (2019)
 
-Annotations:
+
+
+## Annotations:
 - [ ] Update README.md in Python Learning regarding new directory for Python Projects when applicable.
