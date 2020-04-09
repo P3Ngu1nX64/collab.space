@@ -24,6 +24,6 @@ print("We can transport", carpool_capacity, "people today.")
 print("We have", passengers, "to carpool today.")
 print("We need to have about", average_passengers_per_car, "in each car.")
 
-#A floating point ensures that decimals will be incoporated rather than being
+# A floating point ensures that decimals will be incoporated rather than being
 # rounded to the nearest integer. It is useful when the numbers that we deal
 # with are not integers

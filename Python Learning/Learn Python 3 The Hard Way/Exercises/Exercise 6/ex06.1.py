@@ -21,10 +21,9 @@ e = "a string with a right side."  # Creates another corresponding string
 
 print(w + e)  # Prints while concatenating both strings using a plus operator
 
-"""
-There are (arguably) 5 places where a string was placed inside a string
-Lines 2, 6, 11, 12, 17_*
-*: Line 17 was a string that acted like a function because a variable was
-stored in it to format.
-in Line 22, a plus operator was used to concatenate two string variables.
-"""
+
+# There are (arguably) 5 places where a string was placed inside a string
+# Lines 2, 6, 11, 12, 17_*
+# *: Line 17 was a string that acted like a function because a variable was
+# stored in it to format.
+# in Line 22, a plus operator was used to concatenate two string variables.

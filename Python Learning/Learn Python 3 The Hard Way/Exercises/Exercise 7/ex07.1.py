@@ -21,5 +21,6 @@ end12 = "r"
 print(end1 + end2 + end3 + end4 + end5 + end6, end=' ')
 print(end7 + end8 + end9 + end10 + end11 + end12)
 
-#When the "end = ''" is removed from line 20,
-#The line break is set to the default \n and the next string starts on the next line.
+# When the "end = ''" is removed from line 20,
+# The line break is set to the default \n and the next string starts on the
+# next line.
