@@ -1,6 +1,7 @@
 # Plus "+" Addition
 # Minus "-" Subtraction
 # Slash "/" Division
+# Double Slash "//" Division – Quotient w/o Remainder
 # Asterisk "*" Multiplication
 # Percent "%" Modulo (?)
 # Less-than "<" Comparison Smaller
@@ -23,9 +24,9 @@ print(3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6)
 print("Is it true that 3 + 2 < 5 - 7?")
 
 print(3 + 2 < 5 - 7)
-# 6 < -2 is false
+# 5 < -2 is false
 
-print("What is 3 + 2?", 3 + 2)  # 6
+print("What is 3 + 2?", 3 + 2)  # 5
 print("What is 5 - 7?", 5 - 7)  # -2
 
 print("Oh, that's why it's False.")
