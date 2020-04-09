@@ -29,37 +29,32 @@ Exercise No# | Exercise Name | Page Number
 15 | Reading Files | 80
 16 | Reading and Writing Files | 84
 17 | More Files | 88
-18 | Names, Variables, Code, Functions | 92
-19 | Functions and Variables | 96
-20 | Functions and Files | 100
-21 | Functions Can Return Something | 104
-22 | What Do You Know So Far? | 108
-23 | Strings, Bytes, and Character Encodings | 110
-24 | More Practice | 118
-25 | Even More Practice | 112
-26 | Congratulations, Take a Test! | 126
-27 | Memorizing Logic | 128
-28 | Boolean Practice | 132
-29 | What If | 136
-30 | Else and If | 138
-31 | Making Decisions | 142
-32 | Loops and Lists | 146
-33 | While Loops | 150
-34 | Accessing Elements of Lists | 154
-35 | Branches and Functions | 156
-36 | Designing and Debugging | 160
-37 | Symbol Review | 162
-38 | Doing Things to Lists | 168
-39 | Dictionaries, Oh Lovely Dictionaries | 174
-40 | Modules, Classes, and Objects | 180
-41 | Learning to Speak Object-Oriented | 186
-42 | Is-A, Has-A, Objects, and Classes | 192
-43 | Basic Object-Oriented Analysis and Design | 198
-44 | Inheritance Versus Composition | 214
-45 | You Make a Game | 224
-46 | A Project Skeleton | 228
-47 | Automated Testing | 236
-48 | Advanced User Input | 240
-49 | Making Sentences | 248
-50 | Your First Website | 256
-51 | Getting Input from a Browser | 264
+
+### Exercise 1
+A Good First Program.
+When asked to comment out a given line with a pound sign, line 6 is used as an example:
+
+>``print("I'd much rather you 'not'.")``
+
+The complete line to be commented out is reiterated in line 9:
+
+>``# print("I'd much rather you 'not'.")``
+
+### Exercise 2
+Comments and Pound Characters.
+Comments could be put after code in the same line, it is recommended that two spaces are left between the code and the pound characer, as in Line 4:
+
+>``print('I could have code like this.')  # and the comment after is ignored``
+
+### Exercise 3
+Numbers and Math.
+This exercise has three files: ``ex03.0.py`` is the original version, ``ex03.1.py`` has all the numbers converted to floats, and ``ex03.2.py`` has annotations for complex mathematical operations, detailing its calculations.
+
+On lines 1-9 of all files is a list of the mathematical symbols used.
+In the file ``ex03.2.py``, each complex calculation is detailed using the order of operations, which some know as PEDMAS or GEMDAS. It is important to know that the Modulo ``%`` operator is treated in the same order as multiplication ``*`` or division ``/``. For example, in line 14/15:
+
+>``print("Roosters", 100 - 25 * 3 % 4)``
+
+_Additional Information of the Files will be posted here as they are amended to the Directory._
+
+_**This README file has been discontinued as of April 9th of 2020, because it is too difficult to maintain and keep up to date at the moment. It is renamed to **``README.legacy.md``** and a simpler file will take its place on the repository._
