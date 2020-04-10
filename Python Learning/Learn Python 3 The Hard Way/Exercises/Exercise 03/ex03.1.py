@@ -1,8 +1,10 @@
 # Plus "+" Addition
 # Minus "-" Subtraction
 # Slash "/" Division
+# Double Slash "//" Division – Quotient w/o Remainder
 # Asterisk "*" Multiplication
-# Percent "%" Modulo
+# Double Asterisk "**" Exponentiation
+# Percent "%" Modulo (?)
 # Less-than "<" Comparison Smaller
 # Greater-than ">" Comparison Larger
 # Less-than-equal "<=" Comparison Smaller or Equivalent

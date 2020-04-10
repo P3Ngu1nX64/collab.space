@@ -43,6 +43,15 @@ print_a_line(current_line, current_file)
 current_line += 1
 print_a_line(current_line, current_file)
 
+# += (Increments by x)
+# -= (Decrements by x)
+# *= (Multiplies by x)
+# **= (To the xth power)
+# /= (Divides by x)
+# //= (Divides by x ignoring remainder)
+# %= (Finds mod x of original)
+
+
 # File.Seek(x) moves the current "reading position" of the file to the xth
 # character in the file.
 # "Python file method seek() sets the file's current position at the offset."

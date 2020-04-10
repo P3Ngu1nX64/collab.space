@@ -3,6 +3,7 @@
 # Slash "/" Division
 # Double Slash "//" Division – Quotient w/o Remainder
 # Asterisk "*" Multiplication
+# Double Asterisk "**" Exponentiation
 # Percent "%" Modulo (?)
 # Less-than "<" Comparison Smaller
 # Greater-than ">" Comparison Larger
