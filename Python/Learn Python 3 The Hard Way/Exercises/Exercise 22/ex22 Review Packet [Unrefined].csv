@@ -3,10 +3,8 @@ print(),The print function. Used to output text to the console.
 ',Single quote. Used to encapsulate a single line string.
 """",Double quote. Used to encapsulate a single line string.
 ''',Triple quote. Used to encapsulate a multi-line string.
-%,Modulo sign / formatter. Used as modulo in mathematical operations (returns remainder after division).
-,Also used as a formatter when using format strings (only used in python 2 lessons).
-*,Asterisk. Used for multiplication during mathematical operations.
-,"Also used when using *args in functions where you are not sure how many arguments you are passing to the function. Specifically, the * allows you to accept an arbitrary number of arguments."
+%,Modulo sign / formatter. Used as modulo in mathematical operations (returns remainder after division). Also used as a formatter when using format strings (only used in python 2 lessons).
+*,"Asterisk. Used for multiplication during mathematical operations. Also used when using *args in functions where you are not sure how many arguments you are passing to the function. Specifically, the * allows you to accept an arbitrary number of arguments."
 -,Hyphen. Used as a minus sign when performing subtraction in mathematical operations.
 /,Forward slash. Used as a division sign when performing mathematical operations.
 +,Plus sign. Used as an addition sign during mathematical operations. Also used in loops as an iterator. Also used in shorthand such as += meaning 'equal to plus' e.g. a += b which can be written a = a+b
