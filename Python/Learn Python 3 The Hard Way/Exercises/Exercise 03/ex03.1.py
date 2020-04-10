@@ -1,7 +1,7 @@
 # Plus "+" Addition
 # Minus "-" Subtraction
 # Slash "/" Division
-# Double Slash "//" Division – Quotient w/o Remainder
+# Double Slash "//" Floor Division – Quotient w/o Remainder
 # Asterisk "*" Multiplication
 # Double Asterisk "**" Exponentiation
 # Percent "%" Modulo (?)
