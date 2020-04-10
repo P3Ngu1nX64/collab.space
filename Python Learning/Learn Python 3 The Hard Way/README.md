@@ -8,7 +8,7 @@ collab.space in no way takes credit for the uploaded PDF. It is courtesy of [lea
 ## Exercises
 The following section will be concerned with the exercises of the tutorial: Learn Python 3 the Hard Way. It includes annotations of the self-explanatory tutorial rather than explanations.
 Disclaimer: The set up process is very sophisticated, along with its Command Line Crash Course (in the appendix, page 288), could be put into a separate tutorial. Therefore, it will not be incorporated into this tutorial. Therefore, our first exercise will be on Page 34 of the PDF.
-Here is a short Table of Contents. _(Subject to change)_
+Here is a short Table of Contents.
 
 Exercise No# | Exercise Name | Page Number
 ---:|---|:---:
@@ -63,3 +63,5 @@ Exercise No# | Exercise Name | Page Number
 49 | Making Sentences | 248
 50 | Your First Website | 256
 51 | Getting Input from a Browser | 264
+
+_21/51 exercises uploaded_

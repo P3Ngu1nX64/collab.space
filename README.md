@@ -11,4 +11,4 @@ _This is a open source repository, feel free to test your code ideas._
 
 
 ## Annotations:
-- [ ] Update README.md in Python Learning regarding new directory for Python Projects when applicable.
+- [x] Update README.md in Python Learning regarding new directory for Python Projects when applicable.
