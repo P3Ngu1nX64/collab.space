@@ -64,9 +64,10 @@ Exercise No# | Exercise Name | Page Number
 50 | Your First Website | 256
 51 | Getting Input from a Browser | 264
 
-_28/51 exercises uploaded_
+_31/51 exercises uploaded_
 
 Todos:
 - [ ] Figure out Exercise 23 "Very Difficult" Challenge
 - [ ] Change/Format all ex_information.txt files to .md files.
 - [ ] Finish all the Exercises
+- [ ] More markdown integration! @Stephanie
