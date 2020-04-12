@@ -75,3 +75,5 @@ Todos:
 - [ ] Finish all the Exercises
 - [ ] Add attributions to Zed Shaw in each exercise file.
 - [ ] More markdown integration! @stephi8013
+
+hi what am i doing
