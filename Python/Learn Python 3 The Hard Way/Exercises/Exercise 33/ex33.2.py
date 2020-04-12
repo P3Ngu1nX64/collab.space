@@ -1,22 +1,31 @@
 i = 0
 numbers = []
 
-# Range(start=1, end, increment)
-for i in range(1, 6, 1):
+
+def loop(i, increment, end):
     print(f"At the top i is {i}")
     numbers.append(i)
 
+    i += increment
     print("Numbers now: ", numbers)
-    # This is a superficial way of ensuring the same output text
-    # as we didn't increment the i value manually – it is iterated
-    print(f"At the bottom i is {i + 1}")
-    # Again, this continuity only works when increment is set to 1.
+    print(f"At the bottom i is {i}")
 
+    if i < end:
+        # The loop passes its variables onto itself again
+        # Note that this won't happen if the "end" number has been reached
+        loop(i, increment, end)
+        # The number "end" will not be appended to the list "numbers"
+        # Because it is above the incrementation of i.
+
+
+# Calling the loop() Function
+loop(i, 1, 6)
 
 print("The numbers: ")
 
 for num in numbers:
     print(num)
+
 
 # Study Drill 5: Converted ex31.1.py to use for loops and range
 

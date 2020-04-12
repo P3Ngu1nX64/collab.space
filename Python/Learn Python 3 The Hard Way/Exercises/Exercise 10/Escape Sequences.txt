@@ -14,3 +14,5 @@ List of Escape Sequences for Python 3
 \v      ASCII vertical tab (VT)
 \ooo    Character with octal value ooo
 \xhh    Character with hex value hh
+
+refer to ex37 string escape sequences (CSV file)

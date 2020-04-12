@@ -64,7 +64,7 @@ Exercise No# | Exercise Name | Page Number
 50 | Your First Website | 256
 51 | Getting Input from a Browser | 264
 
-_37/51 exercises uploaded_
+_41/51 exercises uploaded_
 
 Notes:
 * ex37: Draw.io is used to create flowcharts. The file 'Python Default Flowchart Template.drawio' is a template for writing flowcharts for Python. When adding flowcharts, both the .drawio file and the exported file will be added to GitHub.
@@ -73,4 +73,5 @@ Todos:
 - [ ] Figure out Exercise 23 "Very Difficult" Challenge
 - [ ] Change/Format all ex_information.txt files to .md files.
 - [ ] Finish all the Exercises
-- [ ] More markdown integration! @Stephanie
+- [ ] Add attributions to Zed Shaw in each exercise file.
+- [ ] More markdown integration! @stephi8013
