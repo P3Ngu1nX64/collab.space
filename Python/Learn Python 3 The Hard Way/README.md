@@ -56,6 +56,11 @@ Exercise No# | Exercise Name | Page Number
 42 | Is-A, Has-A, Objects, and Classes | 192
 43 | Basic Object-Oriented Analysis and Design | 198
 44 | Inheritance Versus Composition | 214
+
+The following exercises are grouped into a project, which can be completed _individually_ and uploaded as a project file here. Therefore, there will be _no_ exercise folders for them.
+
+Exercise No# | Exercise Name | Page Number
+---:|---|:---:
 45 | You Make a Game | 224
 46 | A Project Skeleton | 228
 47 | Automated Testing | 236
