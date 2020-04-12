@@ -73,6 +73,14 @@ number = Complex(3.0, 4.5)
 
 print("the answer is {} + {}i".format(number.r, number.i))
 
+# When to use lists:
+# 1. If you need to maintain order. Remember, this is listed order, not sorted
+#    order. Lists do not sort for you.
+# 2. If you need to access the contents randomly by a number. Remember, this is
+#    using cardinal numbers starting at 0.
+# 3. If you need to go through the contents linearly (first to last). Remember,
+#    that’s what for-loops are for.
+
 
 # Object Oriented Python Programming (OOP):
 
