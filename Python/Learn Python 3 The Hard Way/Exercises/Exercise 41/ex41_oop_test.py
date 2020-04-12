@@ -91,3 +91,6 @@ try:
             print(f"ANSWER: {answer}\n\n")
 except EOFError:
     print("\nBye")
+
+# Notes: a = b[:] is like a = list(b): creates a shallow, linked copy;
+#        changing a will also change b post-definition.
