@@ -57,7 +57,7 @@ Exercise No# | Exercise Name | Page Number
 43 | Basic Object-Oriented Analysis and Design | 198
 44 | Inheritance Versus Composition | 214
 
-The following exercises are grouped into a project, which can be completed _individually_ and uploaded as a project file here. Therefore, there will be _no_ exercise folders for them.
+The following exercises are grouped into a project, which can be completed _individually_ and uploaded as a project file here. Therefore, there may be _no_ exercise folders for them.
 
 Exercise No# | Exercise Name | Page Number
 ---:|---|:---:
@@ -69,7 +69,7 @@ Exercise No# | Exercise Name | Page Number
 50 | Your First Website | 256
 51 | Getting Input from a Browser | 264
 
-_41/51 exercises uploaded_
+_44/51 exercises uploaded_
 
 Notes:
 * ex37: Draw.io is used to create flowcharts. The file 'Python Default Flowchart Template.drawio' is a template for writing flowcharts for Python. When adding flowcharts, both the .drawio file and the exported file will be added to GitHub.
