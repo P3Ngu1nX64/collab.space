@@ -1,3 +1,4 @@
+import string
 import json
 
 prompt = "> "
@@ -99,13 +100,26 @@ Type [!d] to display changes
 
 def transliterate(dictionary):
     """Takes in a dictionary for translation or transliteration"""
+    # Adds special characters to Spanish
+    esp_punctuation = string.punctuation + "¡¿"
+    # Makes a translation table for removing punctuations
+    table = str.maketrans('', '', esp_punctuation)
     sentence = input("Please enter (in {})\n[{}]{}".format(
                dictionary.lang_in.name, dictionary.lang_in.abbrev, prompt))
     words = sentence.split(' ')
     new_words = []
     for i in words:
-        new_words.append(dictionary.dict.get(i, i))
-
+        # Uncapitalize and strip punctuations from "i"
+        processed_i = i.casefold().translate(table)
+        # Gets JSON dictionary translation of word (if available)
+        # If not available, use original "i"
+        new_word = dictionary.dict.get(processed_i, i)
+        # Refers back to original "i" to determine whether to capitalize
+        if i.istitle():
+            new_word = new_word.capitalize()
+        # Adds to printed list.
+        new_words.append(new_word)
+    # Prints the concatenated list.
     print(' '.join(new_words))
 
 
@@ -137,6 +151,9 @@ Language out = {esp2eng.lang_out.name}, Abbreviation = {esp2eng.lang_out.abbrev
 }
 Words = {esp2eng.length}"""
 
+
+# Main Loop:
+
 print(f"""\n{esp2eng.lang_in.name} to {esp2eng.lang_out.name} Transliterator
 {stats_menu}
 {help_menu}""")
@@ -162,6 +179,7 @@ while not exit:
     elif command == 'h' or command == 'H':
         print(help_menu)
     elif command == 'x' or command == 'X':
+        # Breaks the while loop at any time (command page) with "x"
         exit = True
     else:
         print("Invalid Option.")
