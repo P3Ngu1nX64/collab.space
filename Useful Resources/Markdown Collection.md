@@ -140,12 +140,12 @@ Block Quotes can be nested, and they can also contain Code Blocks.
 >`Can have code blocks within them`
 >
 >```Python
-And large, formatted code blocks too
-import math as m
-print(str(m.pi))
-```
+>And large, formatted code blocks too
+>import math as m
+>print(str(m.pi))
+>```
 
-```
+~~~
 > Block Quote.
 >
 >> Nested Block Quote.
@@ -155,11 +155,13 @@ print(str(m.pi))
 >`Can have code blocks within them`
 >
 >```Python
-And large, formatted code blocks too
-import math as m
-print(str(m.pi))
-‎```
-```
+>And large, formatted code blocks too
+>import math as m
+>print(str(m.pi))
+>```
+~~~
+
+_Note_: The (\` \` \`) Triple Backticks are placed next to Backslashes to prevent
 
 ### Lists:
 
