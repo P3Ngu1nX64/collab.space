@@ -1,1 +1,3 @@
-- [ ] I will do this README.md later
+# SPANISH ENGLIFYER
+### Engineered for Annoyance
+#### An exploration of Dictionaries, Classes, and JSON File Structures.
