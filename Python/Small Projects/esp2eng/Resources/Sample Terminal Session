@@ -1,0 +1,374 @@
+Last login: Sat Apr 11 23:02:03 on ttys000 
+mbp1-0:~ darren$ cd Projects/esp2eng/
+mbp1-0:esp2eng darren$ ls -a
+.		..		Resources	dict.json	run.py
+mbp1-0:esp2eng darren$ python3 run.py
+
+Spanish to English Transliterator
+
+Stats:
+Language in = Spanish, Abbreviation = ESP
+Language out = English, Abbreviation = ENG
+Words = 137
+
+Options:
+[a] Add Words
+[d] Delete a Word
+[o] Check Database
+[u] Update Database from File
+[t] Transliterate
+[s] Save Changes
+[h] Help Menu
+[x] Exit
+
+> o
+
+Stats:
+Language in = Spanish, Abbreviation = ESP
+Language out = English, Abbreviation = ENG
+Words = 137
+
+----------
+1: ESP="a", ENG="a"
+2: ESP="abac", ENG="a back"
+3: ESP="abacera", ENG="a bass era"
+4: ESP="abaceras", ENG="a bass eras"
+5: ESP="abaceria", ENG="a bass err yeah"
+6: ESP="abacerias", ENG="a bass err yeas"
+7: ESP="abacero", ENG="a bass err roe"
+8: ESP="abaceros", ENG="a bass err rose"
+9: ESP="abacial", ENG="a bass EEL"
+10: ESP="abaciales", ENG="a bass EEL is"
+11: ESP="abad", ENG="a bad"
+12: ESP="abadejo", ENG="a bad eh oh"
+13: ESP="abadejos", ENG="a bad eh owes"
+14: ESP="abadenga", ENG="a bad in gah"
+15: ESP="abadengas", ENG="a bad in gas"
+16: ESP="abadengo", ENG="a bad in go"
+17: ESP="abadengos", ENG="a bad en goes"
+18: ESP="abades", ENG="a bad is"
+19: ESP="abadesa", ENG="a bad is a"
+20: ESP="abadesas", ENG="a bad is as"
+21: ESP="abadiato", ENG="a bad yat oh"
+22: ESP="abadiatos", ENG="a bad yat owes"
+23: ESP="abadía", ENG="a bad yea"
+24: ESP="abadías", ENG="a bad yeas"
+25: ESP="bien", ENG="been"
+26: ESP="catorce", ENG="cater say"
+27: ESP="cinco", ENG="sing Co."
+28: ESP="como", ENG="come oh"
+29: ESP="cuandos", ENG="coup an dose"
+30: ESP="cuantro", ENG="coup anthro"
+31: ESP="cuatro", ENG="cat roe"
+32: ESP="cuál", ENG="cool all"
+33: ESP="diecinueve", ENG="dice I new eve"
+34: ESP="dieciocho", ENG="dice I ouch oh"
+35: ESP="dieciseís", ENG="dice I says"
+36: ESP="diecisiete", ENG="dice I see ette"
+37: ESP="diez", ENG="these"
+38: ESP="doce", ENG="do say"
+39: ESP="dos", ENG="dose"
+40: ESP="el", ENG="eel"
+41: ESP="ella", ENG="aiya"
+42: ESP="ellas", ENG="ay as"
+43: ESP="ellos", ENG="ay yos"
+44: ESP="entiende", ENG="in tend eh"
+45: ESP="entiendemos", ENG="in ten day most"
+46: ESP="entienden", ENG="in tendon"
+47: ESP="entiender", ENG="in tender"
+48: ESP="entiendes", ENG="in ten days"
+49: ESP="entiendeís", ENG="in ten days"
+50: ESP="entiendo", ENG="in ten dose"
+51: ESP="eres", ENG="err is"
+52: ESP="es", ENG="is"
+53: ESP="español", ENG="is pan yolk"
+54: ESP="esta", ENG="Est. ah"
+55: ESP="estamos", ENG="is tame OS"
+56: ESP="estan", ENG="is tanned"
+57: ESP="estar", ENG="is tar"
+58: ESP="estas", ENG="is tas"
+59: ESP="estaís", ENG="is tase"
+60: ESP="estoy", ENG="is toy"
+61: ESP="habla", ENG="a blah"
+62: ESP="hablamos", ENG="a blame os"
+63: ESP="hablamos__1", ENG="ab lame OS"
+64: ESP="hablan", ENG="a bland"
+65: ESP="hablar", ENG="ab lar"
+66: ESP="hablaron", ENG="a blah Ron"
+67: ESP="hablas", ENG="a blast"
+68: ESP="hablasta", ENG="a blast a"
+69: ESP="hablasteis", ENG="a blast ayes"
+70: ESP="hablaís", ENG="a blah is"
+71: ESP="hablo", ENG="a blow"
+72: ESP="hablé", ENG="ab lay"
+73: ESP="habló", ENG="a BLOW"
+74: ESP="hola", ENG="hole ah"
+75: ESP="inglesa", ENG="in glass ah"
+76: ESP="inglés", ENG="in glaze"
+77: ESP="llama", ENG="yam a"
+78: ESP="llamamos", ENG="yam am OS"
+79: ESP="llaman", ENG="yam an"
+80: ESP="llamar", ENG="yam are"
+81: ESP="llamas", ENG="yam as"
+82: ESP="llamaís", ENG="yam ayes"
+83: ESP="llamo", ENG="yam oh"
+84: ESP="mal", ENG="male"
+85: ESP="muy", ENG="moo oy"
+86: ESP="no", ENG="no"
+87: ESP="nosotras", ENG="nose oh trays"
+88: ESP="nosotros", ENG="nose outros"
+89: ESP="nueve", ENG="new eve"
+90: ESP="ocho", ENG="ouch oh"
+91: ESP="once", ENG="on say"
+92: ESP="para", ENG="pair a"
+93: ESP="pernocta", ENG="per knock tar"
+94: ESP="pernocto", ENG="per knock to"
+95: ESP="pernos", ENG="per nose"
+96: ESP="pero", ENG="per roe"
+97: ESP="peroraciones", ENG="per roar a shown is"
+98: ESP="peroración", ENG="per roar a shown"
+99: ESP="perra", ENG="per ah"
+100: ESP="perrada", ENG="per Ada"
+101: ESP="perradas", ENG="per Adas"
+102: ESP="perras", ENG="per as"
+103: ESP="perrera", ENG="per era"
+104: ESP="perreras", ENG="per eras"
+105: ESP="perrería", ENG="per area"
+106: ESP="perrerías", ENG="per areas"
+107: ESP="perro", ENG="per row"
+108: ESP="perros", ENG="per rows"
+109: ESP="por", ENG="pour"
+110: ESP="poro", ENG="pour oh"
+111: ESP="poros", ENG="pour OS"
+112: ESP="porosa", ENG="pour OSA"
+113: ESP="porosas", ENG="pour Osas"
+114: ESP="porosidad", ENG="pour oh see dad"
+115: ESP="porosidades", ENG="pour oh see dad is"
+116: ESP="poroso", ENG="pour oh so"
+117: ESP="porosos", ENG="pour oh SOS"
+118: ESP="porque", ENG="pork cue"
+119: ESP="quince", ENG="queen see"
+120: ESP="quince__1", ENG="queen say"
+121: ESP="qué", ENG="cue"
+122: ESP="seis", ENG="says"
+123: ESP="siete", ENG="see ette"
+124: ESP="somos", ENG="some OS"
+125: ESP="son", ENG="son"
+126: ESP="soy", ENG="soy"
+127: ESP="soís", ENG="soys"
+128: ESP="sé", ENG="say"
+129: ESP="trece", ENG="tree say"
+130: ESP="tres", ENG="trees"
+131: ESP="tu", ENG="too"
+132: ESP="uno", ENG="un owe"
+133: ESP="veinte", ENG="vain tea"
+134: ESP="vosotras", ENG="vas oh trays"
+135: ESP="vosotros", ENG="vas outros"
+136: ESP="y", ENG="Ee"
+137: ESP="yo", ENG="yo"
+----------
+> a
+UI Dictionary Appender
+Type [!x] to exit
+Type [!s] to save to file
+Type [!d] to display changes
+
+[Spanish]> mucha
+[English]> moo cha
+[Spanish]> muchas
+[English]> moo chase
+[Spanish]> gusta
+[English]> goose tah
+[Spanish]> gustar  
+[English]> goo star
+[Spanish]> gustan
+[English]> goose tan
+[Spanish]> !d
+----------
+1: ESP="gusta", ENG="goose tah"
+2: ESP="gustan", ENG="goose tan"
+3: ESP="gustar", ENG="goo star"
+4: ESP="mucha", ENG="moo cha"
+5: ESP="muchas", ENG="moo chase"
+----------
+[Spanish]> !s
+File dict.json written.
+Dictionary saved to dict.json.
+[Spanish]> !x
+> o
+
+Stats:
+Language in = Spanish, Abbreviation = ESP
+Language out = English, Abbreviation = ENG
+Words = 137
+
+----------
+1: ESP="a", ENG="a"
+2: ESP="abac", ENG="a back"
+3: ESP="abacera", ENG="a bass era"
+4: ESP="abaceras", ENG="a bass eras"
+5: ESP="abaceria", ENG="a bass err yeah"
+6: ESP="abacerias", ENG="a bass err yeas"
+7: ESP="abacero", ENG="a bass err roe"
+8: ESP="abaceros", ENG="a bass err rose"
+9: ESP="abacial", ENG="a bass EEL"
+10: ESP="abaciales", ENG="a bass EEL is"
+11: ESP="abad", ENG="a bad"
+12: ESP="abadejo", ENG="a bad eh oh"
+13: ESP="abadejos", ENG="a bad eh owes"
+14: ESP="abadenga", ENG="a bad in gah"
+15: ESP="abadengas", ENG="a bad in gas"
+16: ESP="abadengo", ENG="a bad in go"
+17: ESP="abadengos", ENG="a bad en goes"
+18: ESP="abades", ENG="a bad is"
+19: ESP="abadesa", ENG="a bad is a"
+20: ESP="abadesas", ENG="a bad is as"
+21: ESP="abadiato", ENG="a bad yat oh"
+22: ESP="abadiatos", ENG="a bad yat owes"
+23: ESP="abadía", ENG="a bad yea"
+24: ESP="abadías", ENG="a bad yeas"
+25: ESP="bien", ENG="been"
+26: ESP="catorce", ENG="cater say"
+27: ESP="cinco", ENG="sing Co."
+28: ESP="como", ENG="come oh"
+29: ESP="cuandos", ENG="coup an dose"
+30: ESP="cuantro", ENG="coup anthro"
+31: ESP="cuatro", ENG="cat roe"
+32: ESP="cuál", ENG="cool all"
+33: ESP="diecinueve", ENG="dice I new eve"
+34: ESP="dieciocho", ENG="dice I ouch oh"
+35: ESP="dieciseís", ENG="dice I says"
+36: ESP="diecisiete", ENG="dice I see ette"
+37: ESP="diez", ENG="these"
+38: ESP="doce", ENG="do say"
+39: ESP="dos", ENG="dose"
+40: ESP="el", ENG="eel"
+41: ESP="ella", ENG="aiya"
+42: ESP="ellas", ENG="ay as"
+43: ESP="ellos", ENG="ay yos"
+44: ESP="entiende", ENG="in tend eh"
+45: ESP="entiendemos", ENG="in ten day most"
+46: ESP="entienden", ENG="in tendon"
+47: ESP="entiender", ENG="in tender"
+48: ESP="entiendes", ENG="in ten days"
+49: ESP="entiendeís", ENG="in ten days"
+50: ESP="entiendo", ENG="in ten dose"
+51: ESP="eres", ENG="err is"
+52: ESP="es", ENG="is"
+53: ESP="español", ENG="is pan yolk"
+54: ESP="esta", ENG="Est. ah"
+55: ESP="estamos", ENG="is tame OS"
+56: ESP="estan", ENG="is tanned"
+57: ESP="estar", ENG="is tar"
+58: ESP="estas", ENG="is tas"
+59: ESP="estaís", ENG="is tase"
+60: ESP="estoy", ENG="is toy"
+61: ESP="gusta", ENG="goose tah"
+62: ESP="gustan", ENG="goose tan"
+63: ESP="gustar", ENG="goo star"
+64: ESP="habla", ENG="a blah"
+65: ESP="hablamos", ENG="a blame os"
+66: ESP="hablamos__1", ENG="ab lame OS"
+67: ESP="hablan", ENG="a bland"
+68: ESP="hablar", ENG="ab lar"
+69: ESP="hablaron", ENG="a blah Ron"
+70: ESP="hablas", ENG="a blast"
+71: ESP="hablasta", ENG="a blast a"
+72: ESP="hablasteis", ENG="a blast ayes"
+73: ESP="hablaís", ENG="a blah is"
+74: ESP="hablo", ENG="a blow"
+75: ESP="hablé", ENG="ab lay"
+76: ESP="habló", ENG="a BLOW"
+77: ESP="hola", ENG="hole ah"
+78: ESP="inglesa", ENG="in glass ah"
+79: ESP="inglés", ENG="in glaze"
+80: ESP="llama", ENG="yam a"
+81: ESP="llamamos", ENG="yam am OS"
+82: ESP="llaman", ENG="yam an"
+83: ESP="llamar", ENG="yam are"
+84: ESP="llamas", ENG="yam as"
+85: ESP="llamaís", ENG="yam ayes"
+86: ESP="llamo", ENG="yam oh"
+87: ESP="mal", ENG="male"
+88: ESP="mucha", ENG="moo cha"
+89: ESP="muchas", ENG="moo chase"
+90: ESP="muy", ENG="moo oy"
+91: ESP="no", ENG="no"
+92: ESP="nosotras", ENG="nose oh trays"
+93: ESP="nosotros", ENG="nose outros"
+94: ESP="nueve", ENG="new eve"
+95: ESP="ocho", ENG="ouch oh"
+96: ESP="once", ENG="on say"
+97: ESP="para", ENG="pair a"
+98: ESP="pernocta", ENG="per knock tar"
+99: ESP="pernocto", ENG="per knock to"
+100: ESP="pernos", ENG="per nose"
+101: ESP="pero", ENG="per roe"
+102: ESP="peroraciones", ENG="per roar a shown is"
+103: ESP="peroración", ENG="per roar a shown"
+104: ESP="perra", ENG="per ah"
+105: ESP="perrada", ENG="per Ada"
+106: ESP="perradas", ENG="per Adas"
+107: ESP="perras", ENG="per as"
+108: ESP="perrera", ENG="per era"
+109: ESP="perreras", ENG="per eras"
+110: ESP="perrería", ENG="per area"
+111: ESP="perrerías", ENG="per areas"
+112: ESP="perro", ENG="per row"
+113: ESP="perros", ENG="per rows"
+114: ESP="por", ENG="pour"
+115: ESP="poro", ENG="pour oh"
+116: ESP="poros", ENG="pour OS"
+117: ESP="porosa", ENG="pour OSA"
+118: ESP="porosas", ENG="pour Osas"
+119: ESP="porosidad", ENG="pour oh see dad"
+120: ESP="porosidades", ENG="pour oh see dad is"
+121: ESP="poroso", ENG="pour oh so"
+122: ESP="porosos", ENG="pour oh SOS"
+123: ESP="porque", ENG="pork cue"
+124: ESP="quince", ENG="queen see"
+125: ESP="quince__1", ENG="queen say"
+126: ESP="qué", ENG="cue"
+127: ESP="seis", ENG="says"
+128: ESP="siete", ENG="see ette"
+129: ESP="somos", ENG="some OS"
+130: ESP="son", ENG="son"
+131: ESP="soy", ENG="soy"
+132: ESP="soís", ENG="soys"
+133: ESP="sé", ENG="say"
+134: ESP="trece", ENG="tree say"
+135: ESP="tres", ENG="trees"
+136: ESP="tu", ENG="too"
+137: ESP="uno", ENG="un owe"
+138: ESP="veinte", ENG="vain tea"
+139: ESP="vosotras", ENG="vas oh trays"
+140: ESP="vosotros", ENG="vas outros"
+141: ESP="y", ENG="Ee"
+142: ESP="yo", ENG="yo"
+----------
+> h
+
+Options:
+[a] Add Words
+[d] Delete a Word
+[o] Check Database
+[u] Update Database from File
+[t] Transliterate
+[s] Save Changes
+[h] Help Menu
+[x] Exit
+
+> t
+Please enter (in Spanish)
+[ESP]> hola me llamo cisco, soy muy inteligente porque voy a Andover.
+hole ah me yam oh cisco, soy moo oy inteligente pork cue voy a Andover.
+> t
+Please enter (in Spanish)
+[ESP]> yo no hablo español porque soy inglés
+yo no a blow is pan yolk pork cue soy in glaze
+> t
+Please enter (in Spanish)
+[ESP]> ¿ hablas el español ?    
+¿ a blast eel is pan yolk ?
+> x
+mbp1-0:esp2eng darren$ 
