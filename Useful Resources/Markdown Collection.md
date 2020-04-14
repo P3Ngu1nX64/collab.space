@@ -463,8 +463,9 @@ This is not a "beautiful" table, but it's a simple one.
 > Simplicity is the ultimate sophistication.
 
 <div style="text-align: right">
-- <b>Leonardo Da Vinci</b>
+- Leonardo Da Vinci
 </div>
+<br>
 
 > Simple is better than complex.
 >
@@ -608,32 +609,12 @@ You can space these lists out with newlines:
 
 - [x] Update libraries
 
-- [ ] Review pull requests
-
-```
-- [x] Write run.py
-
-- [x] Update libraries
-
-- [ ] Review pull requests
-```
-
-Or you can simply split them apart using two newlines:
-
-- [x] Write run.py
-
-
-- [x] Update libraries
-
-
 - [x] Review pull requests
 
 ```
 - [x] Write run.py
 
-
 - [x] Update libraries
-
 
 - [x] Review pull requests
 ```
@@ -648,27 +629,36 @@ When you use code blocks, you are able to highlight and style the code **as if**
 
 You may become too attached to this and find it difficult to use another Markdown implementation without this feature because it indeed is very useful when dealing with and displaying code.
 
-We'll use the example from above (Code Blocks):
+We'll use the example from the Block Quotes section (Python):
 
 Unhighlighted:
 ```
-[user@computer ~]$ which python3
-[user@computer ~]$ python3 --version
-[user@computer ~]$ sudo -H pip3 install pygame
+import math as m
+print('happy', str(m.pi), 'day')
+def foo(bar):
+    print(f"Foo {bar}!")
+
+print(foo('Bar'))
 ```
 Highlighted:
-```bash
-[user@computer ~]$ which python3
-[user@computer ~]$ python3 --version
-[user@computer ~]$ sudo -H pip3 install pygame
+```Python
+import math as m
+print('happy', str(m.pi), 'day')
+def foo(bar):
+    print(f"Foo {bar}!")
+
+print(foo('Bar'))
 ```
 
 Code for highlighting code blocks:
 ````
-```bash
-[user@computer ~]$ which python3
-[user@computer ~]$ python3 --version
-[user@computer ~]$ sudo -H pip3 install pygame
+```Python
+import math as m
+print('happy', str(m.pi), 'day')
+def foo(bar):
+    print(f"Foo {bar}!")
+
+print(foo('Bar'))
 ```
 ````
 
@@ -692,7 +682,7 @@ And Markdown within block-level tags _**will not**_ be executed. Block-level tag
 
 In this section, I will be going over some HTML concepts that are useful towards Markdown.
 
-### Newlines and HTML Tag <br>
+### Newlines and HTML Tag `<br>`
 
 Read more about this HTML tag [here][br_tag].
 
