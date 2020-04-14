@@ -95,3 +95,4 @@ harry = Hailbut()
 # In Python 3 you do not need to add the (object) after the name of the class,
 # but the Python community believes in ”explicit is better than implicit”
 # ”Python Zen says explicit is better than implicit.”
+# Reference: https://www.python.org/dev/peps/pep-0020/

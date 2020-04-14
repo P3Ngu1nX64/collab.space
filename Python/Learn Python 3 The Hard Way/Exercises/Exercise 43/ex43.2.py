@@ -304,6 +304,8 @@ a_game.play()
 
 # Did not use pycodestyle because it doesn't work with dedent and long quotes
 
+# [!] Idea: creating a simple combat system.
+
 # Each "Scene" returns a string, which is then mapped to another "Scene" via
 # a dictionary that is part of the Map, and returned to the game Engline to
 # iterate.

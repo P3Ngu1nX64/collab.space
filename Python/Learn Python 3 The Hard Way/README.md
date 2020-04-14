@@ -75,8 +75,10 @@ Notes:
 * ex37: Draw.io is used to create flowcharts. The file 'Python Default Flowchart Template.drawio' is a template for writing flowcharts for Python. When adding flowcharts, both the .drawio file and the exported file will be added to GitHub.
 
 Todos:
-- [ ] Figure out Exercise 23 "Very Difficult" Challenge
+- [ ] Figure out Exercise 23 "Very Difficult" Challenge (still a no :confused:)
 - [ ] Change/Format all ex_information.txt files to .md files.
-- [ ] Finish all the Exercises
+- [x] Finish Exercises 1-26 (Beginner)
+- [x] Finish Exercises 27-44 (Intermediate)
+- [ ] Finish Exercises 45-51 (Advanced)
 - [ ] Add attributions to Zed Shaw in each exercise file.
 - [ ] More markdown integration! @stephi8013
