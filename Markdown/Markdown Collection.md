@@ -950,7 +950,8 @@ Icon | Short Code
 :-:|:-
 :boy: | `:boy:` | :girl: | `:girl:`
 <!-- This one didn't work -->
-<!--:blonde_man: | `:blonde_man:` <br /> `:person_with_blond_hair:`--> | x | ` ` | :blonde_woman: | `:blonde_woman:`
+<!--:blonde_man: | `:blonde_man:` <br /> `:person_with_blond_hair:`--> 
+| x | `_` | :blonde_woman: | `:blonde_woman:`
 :man: | `:man:` | :woman: | `:woman:`
 :older_man: | `:older_man:` | :older_woman: | `:older_woman:` |
 :baby: | `:baby:`
