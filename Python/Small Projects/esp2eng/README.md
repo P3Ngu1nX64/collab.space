@@ -23,3 +23,5 @@ For example, to run the program on Terminal, excecute the following command
 ```bash
 python3 run.py
 ```
+
+- [ ] reminder to integrate colon and brackets `:` , `(`,`)`
