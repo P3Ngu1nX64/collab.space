@@ -24,4 +24,4 @@ For example, to run the program on Terminal, excecute the following command
 python3 run.py
 ```
 
-- [ ] reminder to integrate colon and brackets `:` , `(`,`)`
+- [ ] reminder to integrate colon and brackets `:`,`(`,`)`
