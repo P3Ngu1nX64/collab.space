@@ -23,5 +23,12 @@ For example, to run the program on Terminal, excecute the following command
 ```bash
 python3 run.py
 ```
+### Future Improvements:
 
-- [ ] reminder to integrate colon and brackets `:`,`(`,`)`
+- [ ] Integrate first-character punctuation recognition for Spanish words,`(`,`)`, _etcetera_.
+
+- [x] Add mode/ability to stay in the transliteration function (potentially an `argv`)
+
+- [x] Add mode/ability to search for a specific word/index in JSON list
+
+- [ ] Prettify json.dump() output file (_optional_)

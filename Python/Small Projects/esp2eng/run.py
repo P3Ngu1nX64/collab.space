@@ -1,5 +1,6 @@
 import string
 import json
+from sys import argv, exit
 
 prompt = "> "
 
@@ -35,12 +36,12 @@ Type [!x] to exit
 Type [!s] to save to file
 Type [!d] to display changes
 """)
-        exit = False
+        exit_script = False
         append_dic = {}
-        while not exit:
+        while not exit_script:
             term_in = input("[{}]{}".format(self.lang_in.name, prompt))
             if term_in == "!x":
-                exit = True
+                exit_script = True
                 break
             elif term_in == "!s":
                 self.write()
@@ -55,7 +56,7 @@ Type [!d] to display changes
             else:
                 term_out = input("[{}]{}".format(self.lang_out.name, prompt))
                 if term_out == "!x":
-                    exit = True
+                    exit_script = True
                     break
                 elif term_out == "!s" or term_out == "!d":
                     print("Error: Option not valid")
@@ -98,30 +99,56 @@ Type [!d] to display changes
         print(f"File {self.infile} written.")
 
 
-def transliterate(dictionary):
+def transliterate(dictionary):  # ESP->ENGT Only
     """Takes in a dictionary for translation or transliteration"""
+    sentence = input("Please enter (in {})\n[{}]{}".format(
+               dictionary.lang_in.name, dictionary.lang_in.abbrev, prompt))
+    if sentence == "!r":
+        return True  # For Special Mode
+    elif sentence == "!x":
+        return 'quit'
     # Adds special characters to Spanish
     esp_punctuation = string.punctuation + "¡¿"
     # Makes a translation table for removing punctuations
     table = str.maketrans('', '', esp_punctuation)
-    sentence = input("Please enter (in {})\n[{}]{}".format(
-               dictionary.lang_in.name, dictionary.lang_in.abbrev, prompt))
     words = sentence.split(' ')
     new_words = []
     for i in words:
         # Uncapitalize and strip punctuations from "i"
         processed_i = i.casefold().translate(table)
         # Gets JSON dictionary translation of word (if available)
-        # If not available, use original "i"
+        # If not available, use original "i", and set a boolean to the value.
+        in_dic = False
+        if processed_i in dictionary.dict:
+            in_dic = True
         new_word = dictionary.dict.get(processed_i, i)
         # Refers back to original "i" to determine whether to capitalize
         if i.istitle():
             new_word = new_word.capitalize()
+
+        if in_dic:
+            last_char = i[-1]  # Possible last character is Punctuation
+            if last_char == ',':
+                new_word += ','
+            elif last_char == '.':
+                new_word += '.'
+            elif last_char == '!':
+                new_word += '!'
+            elif last_char == '?':
+                new_word += '?'
+            elif last_char == ';':
+                new_word += ';'
+            elif last_char == ':':
+                new_word += ':'
+        # No need for an Else clause
         # Adds to printed list.
         new_words.append(new_word)
     # Prints the concatenated list.
     print(' '.join(new_words))
+    return False  # For special mode
 
+
+# Set Up
 
 spanish = Language('Spanish')
 spanish.abbrev = 'ESP'
@@ -132,11 +159,26 @@ esp2eng = Dictionary('dict.json')
 esp2eng.lang_in = spanish
 esp2eng.lang_out = english
 
+
+# Special Mode(s):
+
+if len(argv) == 2 and (argv[1] == "-t" or argv[1] == "--transliterate"):
+    exit_script = False
+    print("Entering Transliteration Only Mode...\n")
+    print("Type [!r] to return to main script")
+    print("Type [!x] to exit script")
+    while not exit_script:
+        exit_script = transliterate(esp2eng)
+        if exit_script == 'quit':  # While loop will not be able to see this.
+            exit(0)
+
+
 help_menu = """
 Options:
 [a] Add Words
 [d] Delete a Word
-[o] Check Database
+[o] Check Entire Database
+[w] Check a Specific Word
 [u] Update Database from File
 [t] Transliterate
 [s] Save Changes
@@ -158,28 +200,40 @@ print(f"""\n{esp2eng.lang_in.name} to {esp2eng.lang_out.name} Transliterator
 {stats_menu}
 {help_menu}""")
 
-exit = False
+exit_script = False
 
-while not exit:
+while not exit_script:
     command = input(prompt)
-    if command == 'a' or command == 'A':
+    if command.casefold() == 'a':
         esp2eng.append_UI()
-    elif command == 'd' or command == 'D':
+    elif command.casefold() == 'd':
         entry = input("Which word to delete?\n{}".format(prompt))
         esp2eng.delete(entry)
-    elif command == 'o' or command == 'O':
+    elif command.casefold() == 'o':
         print(stats_menu, end='\n\n')
         esp2eng.display()
-    elif command == 'u' or command == 'U':
+    elif command.casefold() == 'w':
+        index = input("Please Enter Search Entry:\n[{}]{}".format(
+                      esp2eng.lang_in.abbrev, prompt))
+        print('-' * 10)
+        if index in esp2eng.dict:
+            print("1: {}=\"{}\", {}=\"{}\"".format(esp2eng.lang_in.abbrev,
+                                                   index,
+                                                   esp2eng.lang_out.abbrev,
+                                                   esp2eng.dict.get(index)))
+        else:
+            print("1: ENTRY DOES NOT EXIST.")
+        print('-' * 10)
+    elif command.casefold() == 'u':
         esp2eng.read()
-    elif command == 't' or command == 'T':
+    elif command.casefold() == 't':
         transliterate(esp2eng)
-    elif command == 's' or command == 'S':
+    elif command.casefold() == 's':
         esp2eng.write()
-    elif command == 'h' or command == 'H':
+    elif command.casefold() == 'h':
         print(help_menu)
-    elif command == 'x' or command == 'X':
+    elif command.casefold() == 'x':
         # Breaks the while loop at any time (command page) with "x"
-        exit = True
+        exit_script = True
     else:
         print("Invalid Option.")
