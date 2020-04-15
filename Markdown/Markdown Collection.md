@@ -810,8 +810,8 @@ Icon | Short Code
 :cold_sweat: | `:cold_sweat:`
 :disappointed_relieved: | `:disappointed_relieved:`
 :cry: | `:cry:`
-:sob: | `:sob:` | :scream:
-`:scream:`
+:sob: | `:sob:`
+:scream: | `:scream:`
 :confounded: | `:confounded:`
 :persevere: | `:persevere:`
 :disappointed: | `:disappointed:`
@@ -885,7 +885,7 @@ Icon | Short Code
 :thought_balloon: | `:thought_balloon:`
 :zzz: | `:zzz:`
 
-===
+---
 
 #### Hand
 Icon | Short Code
@@ -949,7 +949,8 @@ Icon | Short Code
 Icon | Short Code
 :-:|:-
 :boy: | `:boy:` | :girl: | `:girl:`
-:blonde_man: | `:blonde_man:` <br /> `:person_with_blond_hair:` | :blonde_woman: | `:blonde_woman:`
+<!-- This one didn't work -->
+<!--:blonde_man: | `:blonde_man:` <br /> `:person_with_blond_hair:`--> | x | ` ` | :blonde_woman: | `:blonde_woman:`
 :man: | `:man:` | :woman: | `:woman:`
 :older_man: | `:older_man:` | :older_woman: | `:older_woman:` |
 :baby: | `:baby:`
@@ -958,14 +959,14 @@ Icon | Short Code
 Icon | Short Code | Icon | Short Code
 :-:|:-|:-:|:-
 :frowning_woman: | `:frowning_woman:` <br /> `:person_frowning:` | :frowning_man: | `:frowning_man:`
-:person_with_pouting_face: | `:person_with_pouting_face:` <br /> `:pouting_woman:` | :pouting_man: | `:pouting_man:`
+:pouting_woman: | `:pouting_woman:` | :pouting_man: | `:pouting_man:`
 :ng_woman: | `:ng_woman:` <br /> `:no_good:` <br /> `:no_good_woman:` | :ng_man: | `:ng_man:` <br /> `:no_good_man:`
 :ok_woman: | `:ok_woman:` | :ok_man: | `:ok_man:`
 :information_desk_person: | `:information_desk_person:` <br /> `:sassy_woman:` <br /> `:tipping_hand_woman:` | :sassy_man: | `:sassy_man:` <br /> `:tipping_hand_man:`
 :raising_hand: | `:raising_hand:` <br /> `:raising_hand_woman:` | :raising_hand_man: | `:raising_hand_man:`
-:bow: | `:bow:` <br /> `:bowing_man:` | :bowing_woman: | `:bowing_woman:`
-:man_facepalming: | `:man_facepalming:` | :woman_facepalming: | `:woman_facepalming:`
-:man_shrugging: | `:man_shrugging:` | :woman_shrugging: | `:woman_shrugging:`
+:bowing_woman: | `:bowing_woman:` | :bow: | `:bow:` <br /> `:bowing_man:`
+:woman_facepalming: | `:woman_facepalming:` | :man_facepalming: | `:man_facepalming:`
+:woman_shrugging: | `:woman_shrugging:` | :man_shrugging: | `:man_shrugging:`
 
 #### Person Role
 Icon | Short Code | Icon | Short Code
@@ -1067,7 +1068,7 @@ Icon | Short Code
 :busts_in_silhouette: | `:busts_in_silhouette:`
 :footprints: | `:footprints:`
 
-===
+---
 
 #### Animal Mammal
 Icon | Short Code
@@ -1203,7 +1204,7 @@ Icon | Short Code
 :fallen_leaf: | `:fallen_leaf:`
 :leaves: | `:leaves:`
 
-===
+---
 
 #### Food Fruit
 Icon | Short Code
@@ -1329,7 +1330,7 @@ Icon | Short Code
 :hocho: | `:hocho:` <br /> `:knife:`
 :amphora: | `:amphora:`
 
-===
+---
 
 #### Place Map
 Icon | Short Code
@@ -1461,7 +1462,7 @@ Icon | Short Code
 Icon | Short Code
 :-:|:-
 :anchor: | `:anchor:`
-:boat: `:boat:` <br /> `:sailboat:`
+:boat: | `:boat:` <br /> `:sailboat:`
 :canoe: | `:canoe:`
 :speedboat: | `:speedboat:`
 :passenger_ship: | `:passenger_ship:`
@@ -1483,9 +1484,6 @@ Icon | Short Code
 :aerial_tramway: | `:aerial_tramway:`
 :artificial_satellite: | `:artificial_satellite:`
 :rocket: | `:rocket:`
-
-DOENS'T BELONG HERE
-:bellhop_bell: | `:bellhop_bell:`
 
 #### Time
 Icon | Short Code
@@ -1563,7 +1561,7 @@ Icon | Short Code
 :droplet: | `:droplet:`
 :ocean: | `:ocean:`
 
-===
+---
 
 #### Events
 Icon | Short Code
@@ -1649,7 +1647,7 @@ Icon | Short Code
 :framed_picture: | `:framed_picture:`
 :art: | `:art:`
 
-===
+---
 
 #### Clothing
 Icon | Short Code
@@ -1695,6 +1693,7 @@ Icon | Short Code
 :postal_horn: | `:postal_horn:`
 :bell: | `:bell:`
 :no_bell: | `:no_bell:`
+:bellhop_bell: | `:bellhop_bell:`
 
 #### Music
 Icon | Short Code
@@ -1915,7 +1914,7 @@ Icon | Short Code
 :funeral_urn: | `:funeral_urn:`
 :moyai: | `:moyai:`
 
-===
+---
 
 #### Transport Sign
 Icon | Short Code
@@ -2066,7 +2065,8 @@ Icon | Short Code
 :-:|:-
 :recycle: | `:recycle:`
 :fleur_de_lis: | `:fleur_de_lis:`
-:trident: | `:trident:`:name_badge: | `:name_badge:`
+:trident: | `:trident:`
+:name_badge: | `:name_badge:`
 :beginner: | `:beginner:`
 :o: | `:o:`
 :white_check_mark: | `:white_check_mark:`
@@ -2168,7 +2168,7 @@ Icon | Short Code
 :white_square_button: | `:white_square_button:`
 :black_square_button: | `:black_square_button:`
 
-===
+---
 
 #### Flag
 Icon | Short Code
