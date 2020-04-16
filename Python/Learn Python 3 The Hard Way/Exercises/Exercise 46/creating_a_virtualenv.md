@@ -6,7 +6,7 @@ Execute the following command in a command line:
 
 ```bash
 $ pip3 list | grep 'virtualenv'
-``
+```
 
 To install and set up a Virtual Environment, standard procedure is the following commands.
 
