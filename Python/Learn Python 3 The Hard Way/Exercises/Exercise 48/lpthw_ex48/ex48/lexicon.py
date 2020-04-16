@@ -1,3 +1,7 @@
+from string import punctuation
+
+filter_table = str.maketrans('', '', punctuation)
+
 directions = ['north', 'south', 'east', 'west', 'down', 'up', 'left', 'right',
 			  'back']
 verbs = ['go', 'stop', 'kill', 'eat']
@@ -31,11 +35,11 @@ def scan(input):
 	output = []
 	for word in words:
 		# This is casefolded for evaluation purposes
-		word_eval = word.casefold()
+		word_eval = word.casefold().translate(filter_table)
 		if type(word) == 'number':
 			word = int(word)
 			# Another method would be to do int(float(word)) which is redundant.
 
-		output.append((type(word_eval), word))
+		output.append((type(word_eval), word.translate(filter_table)))
 
 	return output
