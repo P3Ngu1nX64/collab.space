@@ -12,3 +12,7 @@
 5. Finally, do not get too attached to your tests. Sometimes, the best way to redesign something is to just delete it and start over.
 
 The module `nosetests` will check whether two objects A and B are equal when you call `assert_equal(A, B)` in the test script during the testing.
+
+If you cannot import a module within your script, try `export PYTHONPATH=.` on Mac/Linux terminals.
+
+The files used in this exercise is stored in `Exercise 47/` as `lpthw_ex47/`. Note that the `bin` and `doc` folders are not added because they are empty, and empty folders are ignored by GitHub.
