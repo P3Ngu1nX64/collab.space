@@ -14,7 +14,7 @@ words = words.split(' ')
 # Now words is a list, so I can manipulate each one using a loop
 
 for i in words:
-    if len(i) >= 3: #I only want to translate words greater than 3 characters
+    if len(i) >= 3:  # I only want to translate words greater than 3 characters
         i = i + "%say" % (i[0])
         i = i[1:]
         print(i)

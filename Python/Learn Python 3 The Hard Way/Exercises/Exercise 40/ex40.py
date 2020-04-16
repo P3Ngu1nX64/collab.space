@@ -3,6 +3,7 @@
 # You import that file and you can access these functions/variables via
 # module with the . (dot) operator like: module.variable or module.function()
 
+import ex40_mystuff  # Ignore PyCodeError for this line
 mystuff = {'apple': "I AM APPLES!"}
 print(mystuff['apple'])
 
@@ -21,7 +22,6 @@ tangerine = "Living reflection of a dream"
 # Writes to ex40_mystuff.py (command from ex17.1.py)
 exporting = open("ex40_mystuff.py", 'w+').write(module_commands)
 
-import ex40_mystuff  # Ignore PyCodeError for this line
 ex40_mystuff.apples()
 
 print(ex40_mystuff.tangerine)

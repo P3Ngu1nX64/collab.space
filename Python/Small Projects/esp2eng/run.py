@@ -102,7 +102,7 @@ Type [!d] to display changes
 def transliterate(dictionary):  # ESP->ENGT Only
     """Takes in a dictionary for translation or transliteration"""
     sentence = input("Please enter (in {})\n[{}]{}".format(
-               dictionary.lang_in.name, dictionary.lang_in.abbrev, prompt))
+        dictionary.lang_in.name, dictionary.lang_in.abbrev, prompt))
     if sentence == "!r":
         return True  # For Special Mode
     elif sentence == "!x":
