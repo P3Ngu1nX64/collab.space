@@ -48,3 +48,5 @@ To set up a skeleton for a python project, create the following file structure i
 ```
 
 from now on, the Virtual Environment directory that we will be using will be named `lpthw` and will be located in `Exercise 46`. The `skeleton_template` directory will also be located in `Exercise 46`.
+
+All future Virtual Environment usage would be covered in the directory `lpthw`
