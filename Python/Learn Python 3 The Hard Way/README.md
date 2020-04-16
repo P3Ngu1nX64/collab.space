@@ -81,4 +81,5 @@ Todos:
 - [x] Finish Exercises 27-44 (Intermediate)
 - [ ] Finish Exercises 45-51 (Advanced)
 - [ ] Add attributions to Zed Shaw in each exercise file.
-- [ ] More markdown integration! @stephi8013
+- [x] More markdown integration! @stephi8013
+  - [ ] Write an explanatory README.md File for each Exercise/Folder
