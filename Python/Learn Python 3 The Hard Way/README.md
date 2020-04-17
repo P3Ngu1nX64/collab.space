@@ -56,11 +56,6 @@ Exercise No# | Exercise Name | Page Number
 42 | Is-A, Has-A, Objects, and Classes | 192
 43 | Basic Object-Oriented Analysis and Design | 198
 44 | Inheritance Versus Composition | 214
-
-The following exercises are grouped into a project, which can be completed _individually_ and uploaded as a project file here. Therefore, there may be _no_ exercise folders for them.
-
-Exercise No# | Exercise Name | Page Number
----:|---|:---:
 45 | You Make a Game | 224
 46 | A Project Skeleton | 228
 47 | Automated Testing | 236
@@ -68,8 +63,9 @@ Exercise No# | Exercise Name | Page Number
 49 | Making Sentences | 248
 50 | Your First Website | 256
 51 | Getting Input from a Browser | 264
+52 | The Start of Your Web Game | 274
 
-_44/51 exercises uploaded_
+_49/52 exercises uploaded_
 
 Notes:
 * ex37: Draw.io is used to create flowcharts. The file 'Python Default Flowchart Template.drawio' is a template for writing flowcharts for Python. When adding flowcharts, both the .drawio file and the exported file will be added to GitHub.
@@ -83,3 +79,4 @@ Todos:
 - [ ] Add attributions to Zed Shaw in each exercise file.
 - [x] More markdown integration! @stephi8013
   - [ ] Write an explanatory README.md File for each Exercise/Folder
+  - [ ] Write a collective markdown file as a recap for everything (concise and helpful).
