@@ -29,3 +29,7 @@ Our parser then has to use the functions we described and, given a scanned sente
 ## Exceptions
 
 This code demonstrates how to do that with the ParserError at the top. Notice that it uses classes to give it the type of Exception. Also notice the use of the raise keyword to raise the exception.
+
+## Contents
+
+The contents of this exercise are stored in a project directory titled `lpthy_ex49`. The test script is written for the original parser `ex49/parser.py` (*from the book*) as the improved version `ex49/parser_improved.py` patched many bugs from its predecessor.
