@@ -61,4 +61,4 @@ You put the code you want to ”try” inside the try block, and then you put th
 
 The contents of this exercise will be stored in a project directory entitled `lpthw_ex48`.
 
-The original unit test file is renamed `tests/lexicon_test.py.old` and the improved unit test is named `tests/lexicon_test.py`. To run the old one, simply switch the names.
+The original unit test file is renamed `tests/lexicon_test.old.py` and the improved unit test is named `tests/lexicon_test.py`. To run the old one, delete all the `x`s in front of the `test_` functions.

@@ -65,7 +65,7 @@ Exercise No# | Exercise Name | Page Number
 51 | Getting Input from a Browser | 264
 52 | The Start of Your Web Game | 274
 
-_49/52 exercises uploaded_
+_40/52 exercises uploaded_
 
 Notes:
 * ex37: Draw.io is used to create flowcharts. The file 'Python Default Flowchart Template.drawio' is a template for writing flowcharts for Python. When adding flowcharts, both the .drawio file and the exported file will be added to GitHub.
@@ -75,7 +75,7 @@ Todos:
 - [ ] Change/Format all ex_information.txt files to .md files.
 - [x] Finish Exercises 1-26 (Beginner)
 - [x] Finish Exercises 27-44 (Intermediate)
-- [ ] Finish Exercises 45-51 (Advanced)
+- [ ] Finish Exercises 45-52 (Advanced)
 - [ ] Add attributions to Zed Shaw in each exercise file.
 - [x] More markdown integration! @stephi8013
   - [ ] Write an explanatory README.md File for each Exercise/Folder
