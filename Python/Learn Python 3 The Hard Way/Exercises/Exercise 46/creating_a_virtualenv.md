@@ -38,7 +38,6 @@ To set up a skeleton for a python project, create the following file structure i
 .
 ├── bin
 ├── doc
-├── lol.txt
 ├── NAME
 │   └── __init__.py
 ├── setup.py
