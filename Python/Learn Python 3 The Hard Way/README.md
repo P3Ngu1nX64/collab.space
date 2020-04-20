@@ -757,6 +757,7 @@ Function | Short Description
 
 _Notes_:
 - Unlike an if-statement's `else` clause, which runs when none of the above conditions are met, a `try` statement's `else` clause runs when no exceptions are raised, a `for` loop's `else` clause runs when no breaks occur.
+
 - In a function, if a `finally` clause specifies a return value, that will always be returned.
 
 ### Exercise 38
@@ -770,3 +771,342 @@ Syntax: `sequence [start:stop[:step]]` Where start and stop are indices using 0-
 ### Exercise 39
 
 In Python, a dictionary is defined using the curly brackets `{}`
+
+Dictionary Methods:
+
+Method | Description
+:-|:-
+`dict.clear()` | Removes all the elements from the dictionary.
+`dict.copy()` | Returns a copy of the dictionary.
+`dict.fromkeys()` | Returns a dictionary with the specified keys and value.
+`dict.get()` | Returns the value of the specified key.
+`dict.items()` | Returns a list containing a tuple for each key value pair.
+`dict.keys()` | Returns a list containing the dictionary's keys.
+`dict.pop()` | Removes the element with the specified key.
+`dict.popitem()` | Removes the last inserted key-value pair.
+`dict.setdefault()` | Returns the value of the specified key. If the key does not exist: insert the key, with the specified value.
+`dict.update()` | Updates the dictionary with the specified key-value pairs.
+`dict.values()` | Returns a list of all the values in the dictionary.
+
+### Exercise 40
+
+##### Modules are like Dictionaries
+
+Custom modules can be imported in Python. Similar to a dictionary, a module is a python file that could be imported in another python script. The syntax of importing is as follows:
+
+```python
+import my_stuff
+
+from my_stuff import *
+```
+
+Here's a hypothetical example of what `my_stuff` could contain.
+```python
+class Apples():
+
+    def __init__(self):
+        pass
+
+
+def hello_world:
+    print("Hello, world!")
+
+
+bananas = "tasty!"
+```
+
+In the first import method, the contents could be accessed as such.
+
+```python
+In[1]: import mystuff
+
+In[2]: x = my_stuff.Apples()
+
+In[3]: my_stuff.hello_world()
+Out[3]: Hello, world!
+
+In[4]: print(mystuff.bananas)
+Out[4]: tasty!
+```
+
+And in the second import method, the contents could be directly accessed using their name
+
+```python
+In[1]: bananas = "bland."
+
+In[2]: from my_stuff import *
+
+In[3]: x = Apples()
+
+In[4]: hello_world()
+Out[4]: Hello, world!
+
+In[5]: print(bananas)
+Out[5]: tasty!
+```
+
+As seen above, the second line caused `my_stuff.bananas` to be imported as `bananas`, overriding the original `bananas` which had a value of `"bland."`. This clashing is problematic, which is why the first method is preferred. However, if the file path or file name is very long, it could be imported under a shorter nickname for the module.
+
+```python
+In[1]: bananas = "bland."
+
+In[2]: import my_stuff as m
+
+In[3]: x = m.Apples()
+
+In[4]: m.hello_world()
+Out[4]: Hello, world!
+
+In[5]: print(bananas)
+Out[5]: bland.
+
+In[6]: print(m.bananas)
+Out[6]: tasty!
+```
+
+When importing from a directory other than the current working directory, include a file entitiled `__init__.py` in the same directory as the module and set Python's path to your current working directory. This could be achieved on Linux/Mac via `export PYTHON=$PYTHONPATH .`
+
+##### Classes are like Modules
+
+–––Class Definitions!!!!!!!!!MISSING!!!!!!!!
+
+### Exercise 41 (Review)
+
+### Exercise 42 (Practice)
+
+### Exercise 43 (A Game)
+
+**Programming Processes:**
+
+**The "Top-Down" Process:**
+
+This process starts from the very abstract loose idea and then slowly refines it until the idea is solid and something you can code.
+
+1. Write or draw about the problem.
+2. Extract key concepts from 1 and research them.
+3. Create a class hierarchy and object map for the concepts.
+4. Code the classes and a test to run them.
+5. Repeat and refine.
+
+<br />
+
+**The "Bottom-Up Process"**
+
+This process is better once you’re more solid at programming and are naturally thinking in code about problems.
+
+1. Take a small piece of the problem; hack on some code and get it to run
+barely.
+2. Refine the code into something more formal with classes and automated tests.
+3. Extract the key concepts you’re using and try to find research for them.
+4. Write a description of what’s really going on.
+5. Go back and refine the code, possibly throwing it out and starting over.
+6. Repeat, moving on to some other piece of the problem.
+
+### Exercise 44
+
+–––Inheritance (Three ways) and Composition!!!!!!!!!MISSING!!!!!!!!
+
+### Exercise 45 (Making a Game)
+
+### Exercise 46
+
+**_For exercises 46-51, refer to their exercises folder for an in-depth explanation._**
+
+A virtual environment allows the testing and installation of packages with a _virtual_ installation of the native version of Python. In case anything goes wrong, no harm is done to the computer's main installation of python. Moreover, it is fairly easy and convenient to switch between multiple environments to test multiple packages and use different modules. To create a Virtual Environment, enter the following into a shell. _Note_: `venvs` is now a standard part of the Python 3 Installation.
+
+```bash
+mkdir ~/.venvs
+python3 -m venvs ~/venvs/dir_name
+```
+
+Where `dir_name` is the name of the virtual environment.
+
+To set up a skeleton for a python project, create the following file structure inside your project folder (usually `~/Projects`).
+
+```
+.
+├── bin
+├── doc
+├── NAME
+│   └── __init__.py
+├── setup.py
+└── tests
+    ├── __init__.py
+    └── NAME_tests.py
+```
+
+### Exercise 47
+
+#### Follow this general loose set of guidelines when making your tests:
+
+Start the test file by importing nose tests and importing the project module/file to test.
+```python
+from nose.tools import *
+from NAME.module import thing
+```
+Where `thing` is the specific class/part to be tested.
+
+1. Test files go in tests/ (of the project's directory) and are named BLAH_tests.py, otherwise nose tests won’t run them, a safety measure to prevent nose tests from clashing with other program files.
+2. Write one test file for each module.
+3. Keep test cases (functions) short, and it is acceptable for test cases to be somewhat unorganized, as they usually tend to be.
+4. Even though test cases are messy, try to keep them clean and remove any repetitive code possible. Create helper functions that get rid of duplicate code – that will be vital when the test script needs to be altered as duplicated code will make modifying tests more difficult.
+5. Finally, do not get too attached to your tests. Sometimes, the best way to redesign something is to just delete it and start over.
+
+The module `nosetests` will check whether two objects A and B are equal by calling `assert_equal(A, B)` in the test script during the testing.
+
+If you cannot import a module within your script, try `export PYTHONPATH=.` on Mac/Linux terminals.
+
+### Exercise 48
+
+A simplified version of the English language could include the following elements:
+- Words separated by spaces.
+- Sentences composed of the words.
+- Grammar that structures the sentences into meaning.
+
+In the game there needs to be a list of allowable words called a ”lexicon”:
+- Direction words: north, south, east, west, down, up, left, right, back
+- Verbs: go, stop, kill, eat
+- Stop words: the, in, of, from, at, it
+- Nouns: door, bear, princess, cabinet
+- Numbers: any string of 0 through 9 characters
+
+The words split-up from a sentence will be stored as tuples, an immutable file structure like an array. These are handy as they will display the words as a `(TYPE, WORD)` pair, facilitating the manipulation of the words.
+
+_Note_: A **Tuple** is just a List that is immutable, a tuple cannot be modified. tuples are an essential part to Python's data processing/storing.
+
+### Exercise 49
+
+In this exercise, a parser is created that will break down a sentence (using the lexicon from last exercise) and attempts the understand the sentence using English's SVO – Subject Verb Object sentence structure and the manipulation of arrays made of `(TYPE, WORD)` tuples.
+
+In this exercise, a special exception was defined for the parser. To define an exception, simply define it as a class that is-a Exception.
+
+```python
+class customError(Exception):
+
+    def __init__(self, more_args):
+        pass  # Define something
+```
+
+### Exercise 50
+
+First, a web framework named `flask` has to be installed.
+
+The term ”framework” generally means ”some package that makes it easier for one to do something.”
+
+to install flask, make sure the Virtual Environment is activated. Execute the following command:
+
+```bash
+pip install flask
+```
+
+For some more information on flask, refer to the explanations within Exercises 50 and 51. This exercise only touched on the surface of flask, and not much information has been given. _A Django notes file may be coming soon_
+
+### Exercise 51
+
+The concept of "sessions" is used to store data from users and beautify URLs by removing the ugly specifications at the end of a link.
+
+### Exercise 52 (gothonweb game Refactored)
+
+<br />
+
+<br />
+
+# Coding Rules/Checklists:
+
+###Functions Checklist:
+
+1. Did you start your function with "def"?
+2. Does your function name have only characters and _ (underscore) characters?
+3. Did you put an open parenthesis ( right after the function name?
+4. Did you put your arguments after the parenthesis ( separated by commas?
+5. Did you make each argument unique (meaning no duplicated names)?
+6. Did you put a close parenthesis and a colon ): after the arguments?
+7. Did you indent all lines of code you want in the function four spaces? No more, no less.
+8. Did you "end" your function by going back to writing with no indent ("dedenting", we call it)
+
+When you run (”use” or ”call”) a function, check these things:
+
+1. Did you call/use/run this function by typing its name?
+2. Did you put the ( character after the name to run it?
+3. Did you put the values you want into the parenthesis separated by commas?
+4. Did you end the function call with a ) character?
+
+###Rules for If-Statements
+
+1. Every if-statement must have an else.
+2. If this else should never run because it doesn’t make sense, then you must use a die function in the else that prints out an error message and dies, just like we did in the last exercise. This will find many errors.
+3. Never nest if-statements more than two deep and always try to do them one deep.
+4. Treat if-statements like paragraphs, where each if-elif-else grouping is like a set of sentences. Put blank lines before and after.
+5. Your Boolean tests should be simple. If they are complex, move their calculations to variables earlier in your function and use a good name for the variable.
+
+###Rules for Loops
+
+1. Use a while-loop only to loop forever, and that means probably never. This only applies to Python; other languages are different.
+2. Use a for-loop for all other kinds of looping, especially if there is a fixed or limited number of things to loop over
+
+###Tips for Debugging
+
+1. Do not use a ”debugger.” A debugger is like doing a full-body scan on a sick person. You do not get any specific useful information, and you find a whole lot of information that doesn’t help and is just confusing.
+2. The best way to debug a program is to use print to print out the values of variables at points in the program to see where they go wrong.
+3. Make sure parts of your programs work as you work on them. Do not write massive files of code before you try to run them. Code a little, run a little, fix a little.
+
+The best way to work on a piece of software is in small chunks like this:
+1. On a sheet of paper or an index card, write a list of tasks you need to complete to finish the software. This is your to do list.
+2. Pick the easiest thing you can do from your list.
+3. Write out English comments in your source file as a guide for how you would accomplish this task in your code.
+4. Write some of the code under the English comments.
+5. Quickly run your script so see if that code worked.
+6. Keep working in a cycle of writing some code, running it to test it, and fixing it until it works.
+7. Cross this task off your list, then pick your next easiest task and repeat.
+This process will help you work on software in a methodical and consistent manner. As you work, update your list by removing tasks you don’t really need and adding ones you do.
+
+
+# Code Style Guide for Independent Programming
+
+### Function Style Guidelines:
+
+* For various reasons, programmers call functions that are part of classes ”methods”. It’s mostly marketing, but just be warned that every time you say ”function” they’ll annoyingly correct you and say ”method.” If they get too annoying, just ask them to demonstrate the mathematical basis that determines how a ”method” is different from a ”function” and they’ll shut up.
+* When you work with classes much of your time is spent talking about making the class ”do things.” Instead of naming your functions after what the function does, instead name it as if it’s a command you are giving to the class. Same as `pop` is saying ”Hey list, pop this off.” It isn’t called `remove_from_end_of_list` because even though that’s what it does, that’s not a command to a list.
+* Keep your functions small and simple. For some reason when people start learning about classes they forget this.
+
+### Class Style:
+
+* Your class should use ”camel case” like `SuperGoldFactory` rather than `super_gold_factory`.
+* Try not to do too much in your `__init__` functions. It makes them harder to use.
+* Your other functions should use ”underscore format,” so write `my_awesome_hair` and `notmyawesomehair` or `MyAwesomeHair`.
+* Be consistent in how you organize your function arguments. If your class has to deal with users, dogs, and cats, keep that order throughout unless it really doesn’t make sense. If you have one function that takes (`dog, cat, user`) and the other takes (`user, cat, dog`), it’ll be hard to use.
+* Try not to use variables that come from the module or globals. They should be fairly self-contained.
+* A foolish consistency is the hobgoblin of little minds. Consistency is good, but foolishly following some idiotic mantra because everyone else does is bad style. Think for yourself.
+* Always ,_always_ have `class Name(object)` format or else you will be in big trouble.
+
+### Code Style:
+
+* Give your code vertical space so people can read it. You will find some very bad programmers who are able to write reasonable code but who do not add _any_ spaces. This is bad style in any language because the human eye and brain use space and vertical alignment to scan and separate visual elements. Not having space is the same as giving your code an awesome camouflage paint job.
+* If you can’t read it out loud, it’s probably hard to read. If you are having a problem making something easy to use, try reading it out loud. Not only does this force you to slow down and really read it, but it also helps you find difficult passages and things to change for readability.
+* Try to do what other people are doing in Python until you find your own style.
+* Once you find your own style, do not be a jerk about it. Working with other people’s code is part of being a programmer, and other people have really bad taste. Trust me, you will probably have really bad taste too and not even realize it.
+* If you find someone who writes code in a style you like, try writing something that mimics that style.
+
+### Good Comments:
+
+* Programmers will tell you that your code should be readable enough that you do not need comments. They’ll then tell you in their most official sounding voice, ”Ergo one should never write comments or documentation. QED.” Those programmers are either consultants who get paid more if other people can’t use their code, or incompetents who tend to never work with other people. Ignore them and write comments.
+* When you write comments, describe _why_ you are doing what you are doing. The code already says how, but why you did things the way you did is more important.
+* When you write doc comments for your functions, make the comments documentation for someone who will have to use your code. You do not have to go crazy, but a nice little sentence about what someone can do with that function helps a lot.
+* While comments are good, too many are bad, and you have to maintain them. Keep your comments relatively short and to the point, and if you change a function, review the comment to make sure it’s still correct.
+
+
+# Next Up
+
+Things to learn beyond Basic Python:
+
+- **Intermediate Python** (Zed Shaw LPTHW)
+
+- **Flask** or **Django** (Django is better for data management and extensions)
+
+- **Scipy** (Anaconda/Jupyterlabs and Python's Math Syntax)
+
+- **Pandas** (Data Manipulation, Replacement for Excel)
+
+- **NLTK**(Natural Language Tool Kit) and **Tensorflow** (For Deep Learning/Neural Networks)
+
+- **Pygame** (For creating graphical games using a sprite system)
