@@ -58,5 +58,3 @@ main(languages, input_encoding, error)
 # Everything on the left of <===> are (raw) Python Numerical Bytes
 # They are displayed in hexadecimal, and they are how Python stores the string
 # Everything on the right of <===> are "cooked" so you could see the characters
-
-# Note: I couldn't figure out the ex23.py challenge. Saved for later.

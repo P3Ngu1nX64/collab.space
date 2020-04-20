@@ -2,7 +2,7 @@
 
 This exercise we will improve on our "Hello World" by using forms and storing information about users into their ”sessions.”
 
-[Diagram](How The Internet Works.png)
+![alt-text: Diagram](How%20The%20Internet%20Works.png "How The Internet Works")
 
 1. You type in the url `http://test.com//` into your browser, and it sends the request on line (A) to your computer’s network interface.
 2. Your request goes out over the internet on line (B) and then to the remote computer on line (C) where my server accepts the request.
