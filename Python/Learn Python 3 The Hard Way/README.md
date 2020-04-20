@@ -868,7 +868,60 @@ When importing from a directory other than the current working directory, includ
 
 ##### Classes are like Modules
 
-–––Class Definitions!!!!!!!!!MISSING!!!!!!!!
+Classes in Python are an integral part of its Object Oriented Programming. To define a class, use the statement `class`. Inside the class, if variables have to be defined, a `__init__()` function needs to be called. The function takes arguments `self` and any other input variables the class wants at definition. Classes without inheritance are always defined as `object`s because:
+
+> Explicit is better than implicit.
+
+<div style="text-align: right">
+- Line 2 of Stanza 1 of the <b><a href="https://www.python.org/dev/peps/pep-0020/">Zen of Python</a></b>
+</div>
+
+```python
+class Person(object):
+    def __init__(self, name, age, height_inches):
+        self.name = name
+        self.age = age
+        self.height_cm = height_inches * 2.54
+        self.weight = None
+        self.job = None
+
+    def print_resume():
+        if self.job:
+            print("{} currently work as a {}".format(self.name, self.job))
+        else:
+            print(f"{name} is currently unemployed")
+
+    def grow_taller(height_in_cm):
+        try:
+            self.height_cm += height_in_cm
+            print(f"you are now {self.height_cm} cm tall!")
+        except ValueError
+            print("Value Error: Are you sure you inputted a number?")
+```
+
+To initialize this example class, it needs to be called with three positional input parameters/arguments.
+
+```python
+In[1]: john = Person("John", 34, 72)
+
+In[2]: print(john.height_cm)
+Out[2]: 182.88
+
+In[3]: john.job = "Technician"
+
+In[4]: john.print_resume()
+Out[4]: John currently work as a Technician
+
+In[5]: john.grow_taller(10)  # Increase height by 10cm, yay!
+Out[5]: you are now 192.88 cm tall!
+
+In[6]: john.grow_taller('Technician')
+Out[6]: Value Error: Are you sure you inputted a number?
+```
+
+When the Person john was defined, it is created as an object–an _instantiation_ of Person. In this case, john is-a Person. john has-a name, john has-a heigh (cm), john has-an age, and we defined john's job as a technician so john has-a job. This is the oversimplified version of `is-a` and `has-a` relationship between classes or classes and instances of such classes.
+
+This is the basic demonstration of how Classes work in Python. They are fairly flexible and scalable as they are good for reducing redundant code.
 
 ### Exercise 41 (Review)
 
@@ -904,7 +957,184 @@ barely.
 
 ### Exercise 44
 
-–––Inheritance (Three ways) and Composition!!!!!!!!!MISSING!!!!!!!!
+There are two ways in which classes interact with one another: Inheritance and Composition.
+
+##### Inheritance
+
+Inheritance is when a class has an "is-a" relationship to another class. by defining `class Foo(Bar):` we are essentially saying `Foo` is-a `Bar`, and using a function called `super()` the _subclass/child class_ `Foo` will inherit all the attributes of _base class/parent class_ `Bar`.  (_Note: Terminology in Italics_)
+
+There are three ways a base class and its subclass can interact via inheritance:
+
+1. Implicit Inheritance
+
+```python
+class Parent(object):
+
+    def implicit(self):
+        print("PARENT implicit")
+
+
+class Child(Parent):
+
+    pass
+
+
+dad = Parent()
+son = Child()
+```
+
+```python
+# This is a method of Parent and dad is-a Parent.
+In[1]: dad.implicit()
+Out[1]: PARENT implicit
+
+# son inherited the trait implicitly from Parent because son is-a Child and class Child is-a Parent
+In[2]: son.implicit()
+Out[2] PARENT implicit
+```
+
+Remember:
+
+> Explicit is better than implicit.
+
+<div style="text-align: right">
+- Line 2 of Stanza 1 of the <b><a href="https://www.python.org/dev/peps/pep-0020/">Zen of Python</a></b>
+</div>
+
+2. Override Explicitly
+
+    An inherited trait can always be overridden by another definition.
+
+```python
+class Parent(object):
+
+    def override(self):
+        print("PARENT override")
+
+
+class Child(Parent):
+
+    def override(self):
+        print("CHILD override")
+
+
+dad = Parent()
+son = Child()
+```
+
+```python
+# This is a method of Parent and dad is-a Parent.
+In[1]: dad.override()
+Out[1]: PARENT override
+
+# son overridden the inherited trait of 'override()' from class Parent.
+In[2]: son.override()
+Out[2] PARENT override
+```
+
+3. Alter Before and After
+    Doing so essentially overrides the implicit trait by defining another trait with the same name. However, the parent trait is still in use because we referenced it with the `super()` function. `super(name, self)` where name is the name of your current class will return a parent class. Then, the `altered()` trait is called on that parent class. This method is better than implicit inheritance as it does not limit to the same name or exact traits. As many traits could be referenced as necessary, and any number of commands could be placed between theses references.
+
+```python
+class Parent(object):
+
+    def altered(self):
+        print("PARENT altered")
+
+
+class Child(Parent):
+
+    def altered(self):
+        print("CHILD, BEFORE PARENT altered")
+        super(Child, self).altered()
+        print("CHILD, AFTER PARENT altered")
+
+
+dad = Parent()
+son = Child()
+```
+
+```python
+# This is a method of Parent and dad is-a Parent.
+In[1]: dad.override()
+Out[1]: PARENT altered
+
+# son overridden the inherited trait of 'override()' from class Parent.
+In[2]: son.override()
+Out[2]: CHILD, BEFORE PARENT altered
+        PARENT altered
+        CHILD, AFTER PARENT altered
+```
+
+For more on the `super()` function, check this [brief explanation][super-1] or the [python documentations][pydoc_super].
+
+<!--References-->
+[super-1]: https://python-reference.readthedocs.io/en/latest/docs/functions/super.html
+[pydoc_super]: https://docs.python.org/3.3/library/functions.html#super
+
+##### Composition
+
+Inheritance is useful, but another way to do the exact same thing is just to use other classes and modules, rather than rely on implicit inheritance. Observing the three ways to exploit inheritance, two of the three
+involve writing new code to replace or alter functionality. This can easily be replicated by just calling functions in a module.
+
+```python
+class Other(object):
+
+    def override(self):
+        print("OTHER override")
+
+    def implicit(self):
+        print("OTHER implicit")
+
+    def altered(self):
+        print("OTHER altered")
+
+
+class Child(object):
+
+    def __init__(self):
+        self.other = Other()
+
+    def implicit(self):
+        self.other.implicit()
+
+    def override(self):
+        print("CHILD override")
+
+    def altered(self):
+        print("CHILD, BEFORE OTHER altered")
+        self.other.altered()
+        print("CHILD, AFTER OTHER altered")
+
+son = Child()
+```
+
+```python
+In[1]: son.implicit()
+Out[1]: OTHER implicit
+
+In[2]: son.override()
+Out[2]: CHILD override
+
+In[3]: son.altered()
+Out[3]: CHILD, BEFORE OTHER altered
+        OTHER altered
+        CHILD, AFTER OTHER altered
+```
+
+In this case, we defined the class `self.other()` as `Other()`; therefore, we can use `self.other()` to use and call any traits from class `Other`.
+
+##### When it is appropriate to use each method.
+
+1. Avoid multiple inheritance at all costs, as it is too complex to be reliable.
+If there are no other options, then be prepared to know the class hierarchy and spend
+time finding where everything is coming from.
+
+2. Use composition to package code into modules that are used in many different
+unrelated places and situations.
+
+3. Use inheritance only when there are clearly related reusable pieces of code
+that fit under a single common concept or if it is mandatory.
 
 ### Exercise 45 (Making a Game)
 
