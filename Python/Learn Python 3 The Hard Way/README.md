@@ -1243,7 +1243,7 @@ The concept of "sessions" is used to store data from users and beautify URLs by 
 
 # Coding Rules/Checklists:
 
-###Functions Checklist:
+### Functions Checklist:
 
 1. Did you start your function with "def"?
 2. Does your function name have only characters and _ (underscore) characters?
@@ -1261,7 +1261,7 @@ When you run (”use” or ”call”) a function, check these things:
 3. Did you put the values you want into the parenthesis separated by commas?
 4. Did you end the function call with a ) character?
 
-###Rules for If-Statements
+### Rules for If-Statements
 
 1. Every if-statement must have an else.
 2. If this else should never run because it doesn’t make sense, then you must use a die function in the else that prints out an error message and dies, just like we did in the last exercise. This will find many errors.
@@ -1269,12 +1269,12 @@ When you run (”use” or ”call”) a function, check these things:
 4. Treat if-statements like paragraphs, where each if-elif-else grouping is like a set of sentences. Put blank lines before and after.
 5. Your Boolean tests should be simple. If they are complex, move their calculations to variables earlier in your function and use a good name for the variable.
 
-###Rules for Loops
+### Rules for Loops
 
 1. Use a while-loop only to loop forever, and that means probably never. This only applies to Python; other languages are different.
 2. Use a for-loop for all other kinds of looping, especially if there is a fixed or limited number of things to loop over
 
-###Tips for Debugging
+### Tips for Debugging
 
 1. Do not use a ”debugger.” A debugger is like doing a full-body scan on a sick person. You do not get any specific useful information, and you find a whole lot of information that doesn’t help and is just confusing.
 2. The best way to debug a program is to use print to print out the values of variables at points in the program to see where they go wrong.
@@ -1331,7 +1331,7 @@ Things to learn beyond Basic Python:
 
 - **Intermediate Python** (Zed Shaw LPTHW)
 
-- **Flask** or **Django** (Django is better for data management and extensions)
+- **Flask** or **Django** (Flask is better and strongly recommended for beginners)
 
 - **Scipy** (Anaconda/Jupyterlabs and Python's Math Syntax)
 
