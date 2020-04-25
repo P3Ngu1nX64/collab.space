@@ -2,6 +2,9 @@
 # Based on Wikipedia's list of colors (by shade)
 # All colors of every shade arranged by brightness, then least saturation (hsv).
 
+# This project is currently paused due to RGB vs sRGB namespace issues.
+# pylette_web has taken its place.
+
 import colorsys as cs
 
 # Shades of Black

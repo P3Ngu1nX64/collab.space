@@ -2,6 +2,7 @@
 # combinations. These values are stored inside tuples.
 import pygame
 from pygame.locals import *
+import pylette_web as clr  # My own color pack, based on HTML colors.
 
 
 aqua = (0, 255, 255)
@@ -38,4 +39,4 @@ alt_surface = DISPLAYSURF.convert_alpha()
 # After transparent objects are drawn to alt_surface, they can then be "blitted"
 # back to DISPLAYSURF so it appears on the screen.
 
-# pygame.image.load() and blits() mentioned later in the capter.
+# pygame.image.load() and blits() mentioned later in the chapter.
