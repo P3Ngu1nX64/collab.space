@@ -1,3 +1,0 @@
-In today's lesson
-we learned how to
-manipulate files.
